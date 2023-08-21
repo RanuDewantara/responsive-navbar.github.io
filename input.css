@@ -2,6 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-#check:checked ~ ul {
-  right: 0;
+#check:checked ~ div.menu {
+  @apply right-0
 }
