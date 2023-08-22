@@ -3,41 +3,173 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar</title>
+  <title>Document</title>
   <link rel="stylesheet" href="./output.css">
-  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <link rel="stylesheet" href="tailwind-elements.css">
 </head>
-<body>
-  <header class="bg-sky-500">
-    <nav class="items-center w-full max-w-screen-xl px-5 py-3 mx-auto">
-      <input type="checkbox" name="check" id="check" class="hidden">
-      <label for="check" class="float-right text-4xl text-white cursor-pointer">
-        <ion-icon name="menu" class="rounded fill-current bg-sky-600 hover:bg-sky-700 active:bg-sky-800 md:hidden"></ion-icon>
-      </label>
-      <a href="#" class="flex items-end text-white">
-        <h1 class="text-4xl font-font4">RT<h1 class="text-xl font-font5">e c h s</h1></h1>
-      </a>
-      <div class="menu fixed text-lg w-full float-right h-screen gap-5 mx-auto leading-10 text-white transition-all duration-500 top-16 md:-top-[52px] md:bg-transparent font-font7 md:relative md:h-fit md:w-fit -right-full md:right-0 md:transition-none md:flex">
-        <ul class="w-2/3 h-screen float-right bg-sky-700">
-          <li class="py-3 mx-auto text-center hover:bg-sky-200 hover:text-sky-600">
-            <a href="#about" class="px-20 lg:px-4 md:px-3">About</a>
-          </li>
-          <li class="py-3 mx-auto text-center hover:bg-sky-200 hover:text-sky-600">
-            <a href="#products" class="px-20 lg:px-4 md:px-3">Products</a>
-          </li>
-          <li class="py-3 mx-auto text-center hover:bg-sky-200 hover:text-sky-600">
-            <a href="#partners" class="px-20 lg:px-4 md:px-3">Partners</a>
-          </li>
-          <li class="py-3 mx-auto text-center hover:bg-sky-200 hover:text-sky-600">
-            <a href="#investors" class="px-20 lg:px-4 md:px-3">Investors</a>
-          </li>
-          <li class="py-3 mx-auto text-center hover:bg-sky-200 hover:text-sky-600">
-            <a href="#careers" class="px-20 lg:px-4 md:px-3">Careers</a>
-          </li>
-        </ul>
+<body class="">
+  <header class="absolute bg-sky-500 w-full z-[2000]">
+    <nav class=" max-w-screen-xl mx-auto">
+      <div class="flex justify-between px-5 items-center md:py-0">
+        <div class="flex items-center text-white">
+          <h1 class="text-4xl font-font4">RT<h2 class="text-xl font-font5">echnology</h2></h1>
+        </div>
+        <div class="space-x-6">
+          <ul class="hidden space-x-4 font-font7 text-white md:flex">
+            <li class="hover:bg-white hover:text-sky-500 py-5">
+              <a href="">About</a>
+            </li>
+            <li class="hover:bg-white hover:text-sky-500 py-5">
+              <a href="">Products</a>
+            </li>
+            <li class="hover:bg-white hover:text-sky-500 py-5">
+              <a href="">Partners</a>
+            </li>
+            <li class="hover:bg-white hover:text-sky-500 py-5">
+              <a href="">Investors</a>
+            </li>
+            <li class="hover:bg-white hover:text-sky-500 py-5">
+              <a href="">Careers</a>
+            </li>
+            <li class="hover:bg-white hover:text-sky-500 py-5">
+              <a href="">Contacts</a>
+            </li>
+          </ul>
+        </div>
+        <div class="rounded my-3 items-center bg-sky-600 hover:bg-sky-700 active:bg-sky-800 focus:bg-sky-800 transition duration-150 ease-in-out md:hidden">
+          <button
+            class="rounded align-middle"
+            type="button"
+            data-te-offcanvas-toggle
+            data-te-target="#offcanvasRight"
+            aria-controls="offcanvasRight"
+            data-te-ripple-color="light">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-10 p-2 rounded-md" fill="white" viewBox="0 0 448 512">
+              <path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg>
+          </button>
+        </div>
       </div>
     </nav>
   </header>
+
+  <div class="md:hidden">
+    <div
+      class="invisible fixed bottom-0 right-0 top-10 z-[1045] flex w-1/2 max-w-full translate-x-full flex-col border-none bg-sky-600 bg-clip-padding text-white outline-none transition duration-300 ease-in-out [&[data-te-offcanvas-show]]:transform-none"
+      tabindex="-1"
+      id="offcanvasRight"
+      aria-labelledby="offcanvasRightLabel"
+      data-te-offcanvas-init>
+      <div class="items-center justify-between py-5 text-center">
+        <ul class="space-y-2 w-full font-font7 px-0 text-white text-center">
+          <li class="hover:text-sky-500 hover:bg-white py-3 px-0">
+            <a href="">
+              About
+            </a>
+          </li>
+          <li class="hover:text-sky-500 hover:bg-white py-3 px-0">
+            <a href="">
+              Products
+            </a>
+          </li>
+          <li class="hover:text-sky-500 hover:bg-white py-3 px-0">
+            <a href="">
+              Partners
+            </a>
+          </li>
+          <li class="hover:text-sky-500 hover:bg-white py-3 px-0">
+              Investors
+          </li>
+          <li class="hover:text-sky-500 hover:bg-white py-3 px-0">
+            <a href="">
+              Careers
+            </a>
+          </li>
+          <li class="hover:text-sky-500 hover:bg-white py-2 px-0">
+            <a href="">
+              Contacts
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- <header class="absolute w-full z-50">
+    <nav class="w-full bg-sky-500 p-4">
+      <div class="container mx-auto">
+        <div class="flex justify-between items-center">
+          <div class="flex items-center text-white">
+            <h1 class="text-4xl font-font4">RT<h2 class="text-xl font-font5">echnology</h2></h1>
+          </div>
+          <ul class="hidden space-x-2 font-font7 text-white md:flex">
+            <li>
+              <a href="">About</a>
+            </li>
+            <li>
+              <a href="">Products</a>
+            </li>
+            <li>
+              <a href="">Partners</a>
+            </li>
+            <li>
+              <a href="">Investors</a>
+            </li>
+            <li>
+              <a href="">Careers</a>
+            </li>
+            <li>
+              <a href="">Contacts</a>
+            </li>
+          </ul>
+          <div class="text-center">
+            <button class="text-white" type="button" data-drawer-target="drawer-navigation" data-drawer-show="drawer-navigation" aria-controls="drawer-navigation">
+              <img src="/img/bars-solid.svg" class="h-10 bg-sky-600 p-2 rounded-lg focus:ring-1 focus:ring-sky-300">
+            </button>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <div class="top-20">
+    <div id="drawer-navigation" class="top-20 left-0 z-40 w-64 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-sky-600" tabindex="-1" aria-labelledby="drawer-navigation-label">
+      <button type="button" data-drawer-hide="drawer-navigation" aria-controls="drawer-navigation" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 absolute top-2.5 right-2.5 inline-flex items-center dark:hover:bg-gray-600 dark:hover:text-white" >
+        <svg aria-hidden="true" class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+        <span class="sr-only">Close menu</span>
+      </button>
+      <ul class="space-y-2 font-font7 px-0 text-white text-center">
+        <li class="hover:text-sky-500 hover:bg-white py-2 px-0">
+          <a href="">
+            About
+          </a>
+        </li>
+        <li class="hover:text-sky-500 hover:bg-white py-2 px-0">
+          <a href="">
+            Products
+          </a>
+        </li>
+        <li class="hover:text-sky-500 hover:bg-white py-2 px-0">
+          <a href="">
+            Partners
+          </a>
+        </li>
+        <li class="hover:text-sky-500 hover:bg-white py-2 px-0">
+            Investors
+        </li>
+        <li class="hover:text-sky-500 hover:bg-white py-2 px-0">
+          <a href="">
+            Careers
+          </a>
+        </li>
+        <li class="hover:text-sky-500 hover:bg-white py-2 px-0">
+          <a href="">
+            Contacts
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div> -->
+  <script src="tailwind-elements.js"></script>
 </body>
 </html>

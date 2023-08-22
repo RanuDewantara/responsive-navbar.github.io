@@ -1,7 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@tailwind variants;
 
-#check:checked ~ div.menu {
-  @apply right-0
+#drawer-navigation{
+  box-shadow: none;
 }
