@@ -9,10 +9,7 @@ module.exports = {
         'font3': 'Coda',
         'font4': 'DAGGERSQUARE',
         'font5': 'Goldman',
-        'font6': 'Prosto One',
-        'font7': 'Play',
-        'font8': 'Revalia',
-        'font9': 'Iceberg',
+        'font6': 'Play',
       }
     },
   },
